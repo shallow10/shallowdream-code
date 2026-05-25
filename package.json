@@ -1,0 +1,39 @@
+{
+  "name": "shallowdream-code",
+  "version": "1.0.0",
+  "description": "ShallowDream Code - AI coding agent in your terminal. Understands your codebase, edits files, runs commands, and handles entire workflows.",
+  "bin": {
+    "sd": "bin/sd.cjs"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node bin/sd.cjs",
+    "dev": "npx tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["ai", "agent", "cli", "coding", "assistant"],
+  "author": "ShallowDream",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "fast-glob": "^3.3.2",
+    "inquirer": "^12.1.0",
+    "marked": "^14.1.0",
+    "marked-terminal": "^7.2.0",
+    "openai": "^4.73.0",
+    "ora": "^8.1.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

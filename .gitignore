@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.js.map
+*.d.ts
+.env
+.env.*
+!.gitignore
+!.npmrc
+shallowdream-code-*.tgz
+.cache/
+sessions/
+*.log
